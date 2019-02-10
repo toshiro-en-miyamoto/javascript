@@ -1,0 +1,11 @@
+{
+  "name": "zakas",
+  "version": "1.0.0",
+  "author": "Nicholas C. Zakas",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^22.0.4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ninja",
+  "version": "2.0.0",
+  "author": "Darren Jones",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "jest": "^22.0.4"
+  }
+}

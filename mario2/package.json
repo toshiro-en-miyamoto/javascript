@@ -1,0 +1,11 @@
+{
+  "name": "mario",
+  "version": "2.0.0",
+  "author": "Casciaro and Mammino",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^22.0.0"
+  }
+}
