@@ -65,12 +65,12 @@ Wester.Structures = Wester.Structures || {};
 var Westeros;
 console.assert(typeof Westeros == 'undefined', typeof Westeros);
 
-(function(westeros) {
+(function(Westeros) {
    'use strict';
    console.assert(typeof Westeros == 'object', typeof Westeros);
-   (function (structures) {
+   (function (Structures) {
       console.assert(typeof Westeros.Structures == 'object', typeof Westeros.Structures);
-      structures.Castle = (function() {
+      var Castle = (function() {
          function Castle(name) {
             this.name = name;
          }
@@ -79,7 +79,9 @@ console.assert(typeof Westeros == 'undefined', typeof Westeros);
          };
          return Castle;
       })();
-      structures.Wall = (function() {
+      Structures.Castle = Castle;
+
+      var Wall = (function() {
          function Wall(castle) {
             this.name = castle['name'];
          }
@@ -88,6 +90,7 @@ console.assert(typeof Westeros == 'undefined', typeof Westeros);
          };
          return Wall;
       })();
+      Structures.Wall = Wall;
    })(Westeros.Structures || (Westeros.Structures = {}));
 })(Westeros || (Westeros = {}));
 
